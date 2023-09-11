@@ -229,13 +229,13 @@ button[type] {
                   </div>
                 </div>
             </tr>
-           
+
             @endforeach
             </tbody>
             <td>
               <div class="alert alert-success" role="alert">
                 <div class="padre">
-             <h4  class="hijo" class="alert-heading">Son $<?php echo number_format($suma , 2); echo("0 COP"); ?>
+             <h4  class="hijo" class="alert-heading">Son $<?php echo number_format($suma); echo(" COP")?>
             </h4>
 
               </div>
