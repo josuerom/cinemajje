@@ -8,19 +8,19 @@ INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `director`, `estudio`, `
 (65, 'La chica del brazalete', 'Lise, de 16 años, está acusada de haber asesinado a su mejor amiga. Durante el juicio, sus padres la defienden de manera inquebrantable. Sin embargo, a medida que su vida secreta comienza a desvelarse, la verdad se convierte en algo indiscutible.', 'Stéphane Demoustier', 'France 3', 'drama', 13500, '95', 'https://www.youtube.com/embed/s6f93SQ95kI', '', 'si', '7.jpg', '2023-09-10 05:17:34', '2023-09-10 05:17:59');
 
 INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'visualizar web', 'web', '2023-09-10 05:43:20', '2023-09-10 05:43:20'),
-(2, 'administrar web', 'web', '2023-09-10 05:58:13', '2023-09-10 05:58:13');
+(1, 'visualizar web', 'web', '2023-10-10 05:43:20', '2023-10-10 05:43:20'),
+(2, 'administrar web', 'web', '2023-10-10 05:58:13', '2023-10-10 05:58:13');
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'cliente', 'web', '2023-09-10 05:39:43', '2023-09-10 05:39:43'),
-(2, 'administrador', 'web', '2023-09-10 05:57:36', '2023-09-10 05:57:36');
+(1, 'cliente', 'web', '2023-10-10 05:39:43', '2023-10-10 05:39:43'),
+(2, 'administrador', 'web', '2023-10-10 05:57:36', '2023-10-10 05:57:36');
 
 INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (1, 1),
 (2, 2);
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Josué Romero', 'admin@cinemajje.com', NULL, '$2y$10$aM0P/lwto5BczsJOfPdnSetj.TST9Q/bKPV.k815PXLUTKJcV6Qtu', NULL, '2023-09-10 08:17:20', '2023-09-10 08:17:20');
+(1, 'Josué Romero', 'admin@cinemajje.com', NULL, '$2y$10$aM0P/lwto5BczsJOfPdnSetj.TST9Q/bKPV.k815PXLUTKJcV6Qtu', NULL, '2023-10-10 08:17:20', '2023-10-10 08:17:20');
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\Models\\User', 1);
